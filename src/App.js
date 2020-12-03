@@ -104,7 +104,7 @@ function App() {
         <Element
           image={BlueCircleLeavesFrame}
           names={names}
-          fontColor='blue'
+          fontColor='gold'
           bg={bg}
           fontSize={blueCircleLeavesFrameFontSize}
           imgName='BlueCircleLeavesFrame'
@@ -113,7 +113,7 @@ function App() {
         <Element
           image={BlueGoldFloralDesignFrame}
           names={names}
-          fontColor='red'
+          fontColor='black'
           bg={bg}
           fontSize={blueGoldFloralDesignFrameFontSize}
           imgName='BlueGoldFloralDesignFrame'
@@ -122,7 +122,7 @@ function App() {
         <Element
           image={GoldBlueLeavesFrame}
           names={names}
-          fontColor='blue'
+          fontColor='green'
           shift='right'
           bg={bg}
           fontSize={goldBlueLeavesFrameFontSize}
@@ -132,7 +132,7 @@ function App() {
         <Element
           image={GoldCircleFrame}
           names={names}
-          fontColor='gold'
+          fontColor='brown'
           bg={bg}
           fontSize={goldCircleFrameFontSize}
           imgName='GoldCircleFrame'
