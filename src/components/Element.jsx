@@ -4,7 +4,8 @@ import './Element.css'
 function Element({image}) {
   return (
     <div className='element-div'>
-      <img src={image} alt='Gold Circle Frame' className='element-image' />
+      <h4 className='names'>Adam and Christina</h4>
+      <img src={image} alt={image} className='element-image' />
     </div>
   )
 }

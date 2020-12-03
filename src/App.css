@@ -1,4 +1,10 @@
 .App-div {
   text-align: center;
+}
+.name-input {
+  width: 20vw;
+  margin: 2vw 0 3.5vw;
+}
+.display-elements {
   display: flex;
 }
