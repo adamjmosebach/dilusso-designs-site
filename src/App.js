@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Element from './components/Element';
 import './App.css';
 
@@ -8,6 +8,13 @@ import GoldBlueLeavesFrame from './assets/GoldBlueLeavesFrame.png';
 import GoldCircleFrame from './assets/GoldCircleFrame.png';
 
 function App() {
+
+  const [names, setNames] = useState('');
+
+  function handleChange(e) {
+    setNames(e.target.value);
+  }
+
   return (
     <div className='App-div'>
       <h1>Dilusso Elements</h1>
@@ -17,13 +24,14 @@ function App() {
           name='names'
           placeholder='Type your names here...'
           className='name-input'
+          onChange={(e) => handleChange(e)}
         ></input>
       </form>
       <div className='display-elements'>
-        <Element image={BlueCircleLeavesFrame} />
-        <Element image={BlueGoldFloralDesignFrame} />
-        <Element image={GoldBlueLeavesFrame} />
-        <Element image={GoldCircleFrame} />
+        <Element image={BlueCircleLeavesFrame} names={names}/>
+        <Element image={BlueGoldFloralDesignFrame} names={names} />
+        <Element image={GoldBlueLeavesFrame} names={names} />
+        <Element image={GoldCircleFrame} names={names} />
       </div>
     </div>
   );
