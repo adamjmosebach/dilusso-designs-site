@@ -10,7 +10,11 @@ import GoldCircleFrame from './assets/GoldCircleFrame.png';
 function App() {
   const [names, setNames] = useState('');
   const [bg, setBg] = useState('white');
-  const [fontSize, updateFontSize] = useState(1.5)
+  const [blueCircleLeavesFrameFontSize, updateBlueCircleLeavesFrameFontSize] = useState(1.5);
+  const [blueGoldFloralDesignFrameFontSize, updateBlueGoldFloralDesignFrameFontSize] = useState(1.5);
+  const [goldBlueLeavesFrameFontSize, updateGoldBlueLeavesFrameFontSize] = useState(1.5);
+  const [goldCircleFrameFontSize, updateGoldCircleFrameFontSize] = useState(1.5);
+  const [selectedImage, setSelectedImage] = useState('');
 
   function handleNameChange(e) {
     setNames(e.target.value);
@@ -21,11 +25,49 @@ function App() {
   }
 
   function handleUpFont() {
-    updateFontSize(fontSize + 0.5);
+    switch (selectedImage) {
+      case 'BlueCircleLeavesFrame':
+        updateBlueCircleLeavesFrameFontSize(blueCircleLeavesFrameFontSize + 0.1);
+        break;
+      case 'BlueGoldFloralDesignFrame':
+        updateBlueGoldFloralDesignFrameFontSize(blueGoldFloralDesignFrameFontSize + 0.1);
+        break;
+      case 'GoldBlueLeavesFrame':
+        updateGoldBlueLeavesFrameFontSize(goldBlueLeavesFrameFontSize + 0.1);
+        break;
+      case 'GoldCircleFrame':
+        updateGoldCircleFrameFontSize(goldCircleFrameFontSize + 0.1);
+        break;
+      default:
+        updateBlueCircleLeavesFrameFontSize(blueCircleLeavesFrameFontSize + 0.1);
+        updateBlueGoldFloralDesignFrameFontSize(blueGoldFloralDesignFrameFontSize + 0.1);
+        updateGoldBlueLeavesFrameFontSize(goldBlueLeavesFrameFontSize + 0.1);
+        updateGoldCircleFrameFontSize(goldCircleFrameFontSize + 0.1);
+        break;
+    }
   }
 
   function handleDownFont() {
-    updateFontSize(fontSize - 0.5);
+    switch (selectedImage) {
+      case 'BlueCircleLeavesFrame':
+        updateBlueCircleLeavesFrameFontSize(blueCircleLeavesFrameFontSize - 0.1);
+        break;
+      case 'BlueGoldFloralDesignFrame':
+        updateBlueGoldFloralDesignFrameFontSize(blueGoldFloralDesignFrameFontSize - 0.1);
+        break;
+      case 'GoldBlueLeavesFrame':
+        updateGoldBlueLeavesFrameFontSize(goldBlueLeavesFrameFontSize - 0.1);
+        break;
+      case 'GoldCircleFrame':
+        updateGoldCircleFrameFontSize(goldCircleFrameFontSize - 0.1);
+        break;
+      default:
+        updateBlueCircleLeavesFrameFontSize(blueCircleLeavesFrameFontSize - 0.1);
+        updateBlueGoldFloralDesignFrameFontSize(blueGoldFloralDesignFrameFontSize - 0.1);
+        updateGoldBlueLeavesFrameFontSize(goldBlueLeavesFrameFontSize - 0.1);
+        updateGoldCircleFrameFontSize(goldCircleFrameFontSize - 0.1);
+        break;
+    }
   }
 
   return (
@@ -59,22 +101,42 @@ function App() {
         </div>
       </div>
       <div className='display-elements'>
-        <Element image={BlueCircleLeavesFrame} names={names} />
-        <Element image={BlueGoldFloralDesignFrame} names={names} />
+        <Element
+          image={BlueCircleLeavesFrame}
+          names={names}
+          fontColor='blue'
+          bg={bg}
+          fontSize={blueCircleLeavesFrameFontSize}
+          imgName='BlueCircleLeavesFrame'
+          setSelectedImage={setSelectedImage}
+        />
+        <Element
+          image={BlueGoldFloralDesignFrame}
+          names={names}
+          fontColor='red'
+          bg={bg}
+          fontSize={blueGoldFloralDesignFrameFontSize}
+          imgName='BlueGoldFloralDesignFrame'
+          setSelectedImage={setSelectedImage}
+        />
         <Element
           image={GoldBlueLeavesFrame}
           names={names}
           fontColor='blue'
           shift='right'
           bg={bg}
-          fontSize={fontSize}
+          fontSize={goldBlueLeavesFrameFontSize}
+          imgName='GoldBlueLeavesFrame'
+          setSelectedImage={setSelectedImage}
         />
         <Element
           image={GoldCircleFrame}
           names={names}
           fontColor='gold'
           bg={bg}
-          fontSize={fontSize}
+          fontSize={goldCircleFrameFontSize}
+          imgName='GoldCircleFrame'
+          setSelectedImage={setSelectedImage}
         />
       </div>
     </div>
