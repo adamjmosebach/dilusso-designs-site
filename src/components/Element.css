@@ -4,6 +4,7 @@
   height: 25vw;
   border: 1px solid black;
   position: relative;
+  /* background-color: rgb(120, 46, 165); */
 }
 .element-image {
   width: 100%;
@@ -12,6 +13,11 @@
 .names {
   width: 100%;
   position: absolute;
-  font-size: 1vw;
+  font-size: 1.5vw;
   margin-top: 12vw;
+  font-family: cursive;
+  color: rgb(159, 138, 20);
+}
+.right {
+  margin-left: 2.5vw;
 }
