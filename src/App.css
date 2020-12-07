@@ -1,21 +1,10 @@
 .App-div {
   text-align: center;
-}
-.input-fields-all {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: 3vw;
-}
-.input-heading {
-  margin-right: 0.5vw;
-}
-.input-section {
-  width: 20vw;
-  margin: 1vw;
+  position: relative;
 }
 .display-elements {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
+  padding-top: 18vw;
 }

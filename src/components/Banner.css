@@ -1,3 +1,45 @@
+.banner-div {
+  display: flex;
+  align-items: center;
+  background-color: black;
+  color: white;
+  position: fixed;
+  height: 17vw;
+  z-index: 5;
+  width: 100vw;
+  justify-content: space-around;
+}
 .s27-logo {
-  width: 5vw;
+  width: 10vw;
+  height: 9vw;
+  margin-left: 2vw;
+}
+.input-fields-all {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1vw;
+  width: 50vw;
+}
+.input-heading {
+  margin-right: 0.5vw;
+  font-size: 1.5vw;
+}
+.input-section {
+  width: 30vw;
+  margin: 1vw;
+}
+input {
+  padding: 0.35vw;
+  width: 15vw;
+}
+select {
+  padding: 0.3vw;
+}
+button {
+  padding: 0.2vw 0.6vw;
+  /* width: 3.75vw; */
+}
+.dilusso-elements {
+  /* font-family: cursive; */
 }

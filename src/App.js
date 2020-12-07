@@ -142,12 +142,12 @@ function App() {
         handleUpFont={handleUpFont}
         handleDownFont={handleDownFont}
       />      
-      <div className='display-elements'>
+      <div className='display-elements' style={{ backgroundColor: bg }}>
         <Element
           image={BlueCircleLeavesFrame}
           names={names}
           fontColor='gold'
-          bg={bg}
+          // bg={bg}
           fontSize={blueCircleLeavesFrameFontSize}
           imgName='BlueCircleLeavesFrame'
           setSelectedImage={setSelectedImage}
@@ -156,7 +156,7 @@ function App() {
           image={BlueGoldFloralDesignFrame}
           names={names}
           fontColor='black'
-          bg={bg}
+          // bg={bg}
           fontSize={blueGoldFloralDesignFrameFontSize}
           imgName='BlueGoldFloralDesignFrame'
           setSelectedImage={setSelectedImage}
@@ -166,7 +166,7 @@ function App() {
           names={names}
           fontColor='green'
           shift='right'
-          bg={bg}
+          // bg={bg}
           fontSize={goldBlueLeavesFrameFontSize}
           imgName='GoldBlueLeavesFrame'
           setSelectedImage={setSelectedImage}
@@ -175,7 +175,7 @@ function App() {
           image={GoldCircleFrame}
           names={names}
           fontColor='brown'
-          bg={bg}
+          // bg={bg}
           fontSize={goldCircleFrameFontSize}
           imgName='GoldCircleFrame'
           setSelectedImage={setSelectedImage}
@@ -184,7 +184,7 @@ function App() {
           image={HexagonDesign}
           names={names}
           fontColor='silver'
-          bg={bg}
+          // bg={bg}
           fontSize={hexagonDesignFontSize}
           imgName='HexagonDesign'
           setSelectedImage={setSelectedImage}
@@ -193,7 +193,7 @@ function App() {
           image={PinkGoldLeavesFrame}
           names={names}
           fontColor='rosegold'
-          bg={bg}
+          // bg={bg}
           fontSize={pinkGoldLeavesFrameFontSize}
           imgName='PinkGoldLeavesFrame'
           setSelectedImage={setSelectedImage}
@@ -202,7 +202,7 @@ function App() {
           image={RoseGoldLeaveFrame}
           names={names}
           fontColor='seagreen'
-          bg={bg}
+          // bg={bg}
           fontSize={roseGoldLeaveFrameFontSize}
           imgName='RoseGoldLeaveFrame'
           setSelectedImage={setSelectedImage}
