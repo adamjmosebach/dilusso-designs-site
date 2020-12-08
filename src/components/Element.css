@@ -1,9 +1,10 @@
 .element-div {
-  width: 26vw;
-  height: 26vw;
+  width: 46vw;
+  height: 46vw;
   /* border: 1px solid black; */
   position: relative;
   margin: 2vw 0;
+  display: flex;
 }
 .element-div:active {
   border: 2px solid red;
@@ -11,14 +12,15 @@
 .element-image {
   width: 100%;
   height: 100%;
+  /* margin: 1vw; */
 }
 .names {
   width: 100%;
   position: absolute;
   font-size: 1.5vw;
-  margin-top: 11.5vw;
   font-family: cursive;
   color: rgb(159, 138, 20);
+  align-self: center;
 }
 .right {
   margin-left: 2.5vw;

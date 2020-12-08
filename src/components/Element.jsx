@@ -5,7 +5,7 @@ function Element({ image, names, fontColor, shift, fontSize, imgName, setSelecte
 
   return (
     <div className='element-div' onClick={() => setSelectedImage(imgName)}>
-      <h4 className={`names ${shift}`} style={{ color: fontColor, fontSize: `${fontSize}vw` }}>{names}</h4>
+      <h4 className={`names ${shift}`} style={{ color: fontColor, fontSize: `${fontSize}vw`, marginLeft: `${shift}vw` }}>{names}</h4>
       <img src={image} alt={image} className='element-image' />
     </div>
   )
