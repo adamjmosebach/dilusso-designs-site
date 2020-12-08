@@ -9,7 +9,7 @@ import GoldBlueLeavesFrame from './assets/GoldBlueLeavesFrame.png';
 import GoldCircleFrame from './assets/GoldCircleFrame.png';
 import HexagonDesign from './assets/HexagonDesign.png';
 import PinkGoldLeavesFrame from './assets/PinkGoldLeavesFrame.png';
-import RoseGoldLeaveFrame from './assets/RoseGoldLeaveFrame.png';
+// import RoseGoldLeaveFrame from './assets/RoseGoldLeaveFrame.png';
 
 function App() {
   const [names, setNames] = useState('');
