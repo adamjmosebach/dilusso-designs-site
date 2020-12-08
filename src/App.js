@@ -18,7 +18,7 @@ function App() {
   const [blueGoldFloralDesignFrameFontSize, updateBlueGoldFloralDesignFrameFontSize] = useState(2.5);
   const [goldBlueLeavesFrameFontSize, updateGoldBlueLeavesFrameFontSize] = useState(2.5);
   const [goldCircleFrameFontSize, updateGoldCircleFrameFontSize] = useState(2.5);
-  const [hexagonDesignFontSize, updateHexagonDesignFontSize] = useState(2.5);
+  const [hexagonDesignFontSize, updateHexagonDesignFontSize] = useState(3.5);
   const [pinkGoldLeavesFrameFontSize, updatePinkGoldLeavesFrameFontSize] = useState(2.5);
   const [roseGoldLeaveFrameFontSize, updateRoseGoldLeaveFrameFontSize] = useState(2.5);
   const [selectedImage, setSelectedImage] = useState('');
@@ -176,6 +176,7 @@ function App() {
           fontSize={pinkGoldLeavesFrameFontSize}
           imgName='PinkGoldLeavesFrame'
           setSelectedImage={setSelectedImage}
+          shift='1.25'
         />
         {/* <Element
           image={RoseGoldLeaveFrame}
