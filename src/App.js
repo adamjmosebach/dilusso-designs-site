@@ -13,18 +13,40 @@ import PinkGoldLeavesFrame from './assets/PinkGoldLeavesFrame.png';
 
 function App() {
   const [names, setNames] = useState('');
+  const [date, setDate] = useState('');
   const [bg, setBg] = useState('white');
-  const [blueCircleLeavesFrameFontSize, updateBlueCircleLeavesFrameFontSize] = useState(2.5);
-  const [blueGoldFloralDesignFrameFontSize, updateBlueGoldFloralDesignFrameFontSize] = useState(2.5);
-  const [goldBlueLeavesFrameFontSize, updateGoldBlueLeavesFrameFontSize] = useState(2.5);
-  const [goldCircleFrameFontSize, updateGoldCircleFrameFontSize] = useState(2.5);
+  const [
+    blueCircleLeavesFrameFontSize,
+    updateBlueCircleLeavesFrameFontSize,
+  ] = useState(2.5);
+  const [
+    blueGoldFloralDesignFrameFontSize,
+    updateBlueGoldFloralDesignFrameFontSize,
+  ] = useState(2.5);
+  const [
+    goldBlueLeavesFrameFontSize,
+    updateGoldBlueLeavesFrameFontSize,
+  ] = useState(2.5);
+  const [goldCircleFrameFontSize, updateGoldCircleFrameFontSize] = useState(
+    2.5
+  );
   const [hexagonDesignFontSize, updateHexagonDesignFontSize] = useState(3.5);
-  const [pinkGoldLeavesFrameFontSize, updatePinkGoldLeavesFrameFontSize] = useState(2.5);
-  const [roseGoldLeaveFrameFontSize, updateRoseGoldLeaveFrameFontSize] = useState(2.5);
+  const [
+    pinkGoldLeavesFrameFontSize,
+    updatePinkGoldLeavesFrameFontSize,
+  ] = useState(2.5);
+  const [
+    roseGoldLeaveFrameFontSize,
+    updateRoseGoldLeaveFrameFontSize,
+  ] = useState(2.5);
   const [selectedImage, setSelectedImage] = useState('');
 
   function handleNameChange(e) {
     setNames(e.target.value);
+  }
+
+  function handleDateChange(e) {
+    setDate(e.target.value);
   }
 
   function handleBgChange(e) {
@@ -121,14 +143,16 @@ function App() {
     <div className='App-div'>
       <Banner
         handleNameChange={handleNameChange}
+        handleDateChange={handleDateChange}
         handleBgChange={handleBgChange}
         handleUpFont={handleUpFont}
         handleDownFont={handleDownFont}
-      />      
+      />
       <div className='display-elements' style={{ backgroundColor: bg }}>
         <Element
           image={BlueCircleLeavesFrame}
           names={names}
+          date={date}
           fontColor='gold'
           fontSize={blueCircleLeavesFrameFontSize}
           imgName='BlueCircleLeavesFrame'
@@ -137,6 +161,7 @@ function App() {
         <Element
           image={BlueGoldFloralDesignFrame}
           names={names}
+          date={date}
           fontColor='black'
           fontSize={blueGoldFloralDesignFrameFontSize}
           imgName='BlueGoldFloralDesignFrame'
@@ -146,6 +171,7 @@ function App() {
         <Element
           image={GoldBlueLeavesFrame}
           names={names}
+          date={date}
           fontColor='green'
           fontSize={goldBlueLeavesFrameFontSize}
           imgName='GoldBlueLeavesFrame'
@@ -155,6 +181,7 @@ function App() {
         <Element
           image={GoldCircleFrame}
           names={names}
+          date={date}
           fontColor='brown'
           fontSize={goldCircleFrameFontSize}
           imgName='GoldCircleFrame'
@@ -164,6 +191,7 @@ function App() {
         <Element
           image={HexagonDesign}
           names={names}
+          date={date}
           fontColor='silver'
           fontSize={hexagonDesignFontSize}
           imgName='HexagonDesign'
@@ -172,6 +200,7 @@ function App() {
         <Element
           image={PinkGoldLeavesFrame}
           names={names}
+          date={date}
           fontColor='pink'
           fontSize={pinkGoldLeavesFrameFontSize}
           imgName='PinkGoldLeavesFrame'

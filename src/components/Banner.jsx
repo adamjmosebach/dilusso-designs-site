@@ -4,6 +4,7 @@ import S27Logo from '../assets/S27_logo.png';
 
 function Banner({
   handleNameChange,
+  handleDateChange,
   handleBgChange,
   handleUpFont,
   handleDownFont,
@@ -23,6 +24,16 @@ function Banner({
               placeholder='Type your names here...'
               className='name-input'
               onChange={(e) => handleNameChange(e)}
+            ></input>
+          </div>
+          <div className='input-section'>
+            <span className='input-heading'>Date: </span>
+            <input
+              type='text'
+              name='date'
+              placeholder='What was your magical date?'
+              className='name-input'
+              onChange={(e) => handleDateChange(e)}
             ></input>
           </div>
           <div className='input-section'>
