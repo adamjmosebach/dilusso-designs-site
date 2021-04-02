@@ -4,7 +4,7 @@
   background-color: black;
   color: white;
   position: fixed;
-  height: 17vw;
+  height: 19vw;
   z-index: 5;
   width: 100vw;
   justify-content: space-around;
@@ -27,11 +27,16 @@
 }
 .input-section {
   width: 30vw;
-  margin: 1vw;
+  margin: 0.5vw;
 }
 input {
   padding: 0.35vw;
   width: 15vw;
+}
+#names.radio,
+#inits.radio {
+  padding: 0;
+  width: 20px;
 }
 select {
   padding: 0.3vw;

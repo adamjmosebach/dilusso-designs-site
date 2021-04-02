@@ -17,10 +17,41 @@
 .names {
   width: 100%;
   position: absolute;
-  font-size: 1.5vw;
+  /* display: flex; */
+  /* font-size: 1.5vw; */
   font-family: cursive;
-  color: rgb(159, 138, 20);
+  /* color: rgb(159, 138, 20); */
   align-self: center;
+  /* margin-top: 4vw; */
+}
+.init1,
+.initAnd,
+.init2 {
+  width: 10%;
+  position: absolute;
+  /* font-size: 2.5vw; */
+  font-family: cursive;
+  /* color: rgb(159, 138, 20); */
+  /* align-self: center; */
+}
+.init1 {
+  padding-left: 15vw;
+  margin-top: 9vw;
+  /* margin-top: -5vw; */
+}
+.initAnd {
+  /* padding: 0; */
+  width: 100%;
+  align-self: center;
+  margin-top: -1vw;
+  padding-left: 1.25vw;
+}
+.init2 {
+  padding-left: 27vw;
+  padding-top: 4vw;
+}
+.date {
+  margin-top: 8vw;
 }
 .right {
   margin-left: 2.5vw;

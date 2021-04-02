@@ -12,6 +12,7 @@ import PinkGoldLeavesFrame from './assets/PinkGoldLeavesFrame.png';
 // import RoseGoldLeaveFrame from './assets/RoseGoldLeaveFrame.png';
 
 function App() {
+  const [nameInit, setNameInit] = useState('names');
   const [names, setNames] = useState('');
   const [date, setDate] = useState('');
   const [bg, setBg] = useState('white');
@@ -40,6 +41,10 @@ function App() {
     updateRoseGoldLeaveFrameFontSize,
   ] = useState(2.5);
   const [selectedImage, setSelectedImage] = useState('');
+
+  function handleNameInitChange(e) {
+    setNameInit(e.target.value)
+  }
 
   function handleNameChange(e) {
     setNames(e.target.value);
@@ -142,6 +147,7 @@ function App() {
   return (
     <div className='App-div'>
       <Banner
+        handleNameInitChange={handleNameInitChange}
         handleNameChange={handleNameChange}
         handleDateChange={handleDateChange}
         handleBgChange={handleBgChange}
@@ -151,6 +157,7 @@ function App() {
       <div className='display-elements' style={{ backgroundColor: bg }}>
         <Element
           image={BlueCircleLeavesFrame}
+          nameInit={nameInit}
           names={names}
           date={date}
           fontColor='gold'
@@ -160,6 +167,7 @@ function App() {
         />
         <Element
           image={BlueGoldFloralDesignFrame}
+          nameInit={nameInit}
           names={names}
           date={date}
           fontColor='black'
@@ -170,6 +178,7 @@ function App() {
         />
         <Element
           image={GoldBlueLeavesFrame}
+          nameInit={nameInit}
           names={names}
           date={date}
           fontColor='green'
@@ -180,6 +189,7 @@ function App() {
         />
         <Element
           image={GoldCircleFrame}
+          nameInit={nameInit}
           names={names}
           date={date}
           fontColor='brown'
@@ -190,6 +200,7 @@ function App() {
         />
         <Element
           image={HexagonDesign}
+          nameInit={nameInit}
           names={names}
           date={date}
           fontColor='silver'
@@ -199,6 +210,7 @@ function App() {
         />
         <Element
           image={PinkGoldLeavesFrame}
+          nameInit={nameInit}
           names={names}
           date={date}
           fontColor='pink'

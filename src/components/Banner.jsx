@@ -3,6 +3,7 @@ import './Banner.css';
 import S27Logo from '../assets/S27_logo.png';
 
 function Banner({
+  handleNameInitChange,
   handleNameChange,
   handleDateChange,
   handleBgChange,
@@ -17,11 +18,32 @@ function Banner({
       <div className='banner-info'>
         <div className='input-fields-all'>
           <div className='input-section'>
-            <span className='input-heading'>Names: </span>
+            <div className='radios'>
+              <input
+                type='radio'
+                name='name-init-radio'
+                id='names'
+                value='names'
+                className='radio'
+                defaultChecked
+                onChange={(e) => handleNameInitChange(e)}
+              />
+              <label htmlFor='name'>Name</label>
+              <input
+                type='radio'
+                name='name-init-radio'
+                id='inits'
+                value='inits'
+                className='radio'
+                onChange={(e) => handleNameInitChange(e)}
+              />
+              <label htmlFor='inits'>Initials</label>
+            </div>
+            {/* <span className='input-heading'>Names: </span> */}
             <input
               type='text'
               name='names'
-              placeholder='Type your names here...'
+              // placeholder='Type your names here...'
               className='name-input'
               onChange={(e) => handleNameChange(e)}
             ></input>
@@ -31,7 +53,7 @@ function Banner({
             <input
               type='text'
               name='date'
-              placeholder='What was your magical date?'
+              // placeholder='What was your magical date?'
               className='name-input'
               onChange={(e) => handleDateChange(e)}
             ></input>
